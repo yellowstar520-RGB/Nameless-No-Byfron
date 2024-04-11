@@ -16,9 +16,9 @@
 	 wait(1.5)
  end
  
- -- Notification library
- local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/yellowstar520-RGB/Nameless-No-Byfron/main/Notification"))();
- local Notify = Notification.Notify;
+ --  library
+ local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/yellowstar520-RGB/NamelessByfronless/main/Notification"))();
+ local Notify = .Notify;
  
  -- Custom file functions checker checker
  local CustomFunctionSupport = isfile and isfolder and writefile and readfile and listfiles
@@ -622,11 +622,11 @@
  end)
  
  cmd.add({"executor"}, {"executor", "Very simple executor"}, function()
-	 loadstring(game:HttpGet("https://raw.githubusercontent.com/FilteringEnabled/FE/main/executor"))()
+	 loadstring(game:HttpGet("raw.githubusercontent.com/FilteringEnabled/FE/main/executor"))()
  end)
  
  cmd.add({"scripthub"}, {"scripthub", "Thanks to scriptblox api"}, function()
-	 loadstring(game:HttpGet("https://raw.githubusercontent.com/FilteringEnabled/FE/main/ScriptHub"))()
+	 loadstring(game:HttpGet("raw.githubusercontent.com/FilteringEnabled/FE/main/ScriptHub"))()
  end)
  
  cmd.add({"stand"}, {"stand <player>", "Makes a player your stand"}, function(...)
@@ -739,7 +739,7 @@
  end)
  
  cmd.add({"plugins"}, {"plugins", "Check what kind of plugins you have, add plugins using a gui, delete a plugin."}, function()
-	 loadstring(game:HttpGet("https://raw.githubusercontent.com/FilteringEnabled/FE/main/NamelessAdminPlugin"))();
+	 loadstring(game:HttpGet("raw.githubusercontent.com/FilteringEnabled/FE/main/NamelessAdminPlugin"))();
  end)
  
  cmd.add({"prefix"}, {"prefix <prefix>", "Changes the admin prefix"}, function(...)
@@ -822,7 +822,7 @@
  end)
  
  cmd.add({"kanye"}, {"kanye", "Random kanye quote"}, function()
-	local check = "https://api.kanye.rest/"
+	local check = "api.kanye.rest/"
 		 local final = game:HttpGet(check)
 		 local final2 = string.gsub(final,'"quote"',"")
 		 local final3 = string.gsub(final2,"[%{%:%}]","")
@@ -1697,7 +1697,7 @@
  end)
  
  cmd.add({"godmode", "god"}, {"godmode (god)", "Makes you unable to be killed"}, function()
-	 loadstring(game:HttpGet(('https://pastebin.com/raw/bbyuynM1'),true))()
+	 loadstring(game:HttpGet(('pastebin.com/raw/bbyuynM1'),true))()
  end)
  
  cmd.add({"clickfling", "mousefling"}, {"mousefling (clickfling)", "Fling a player by clicking them"}, function()
@@ -2300,7 +2300,7 @@ print(Time)
  cmd.add({"joke"}, {"joke", "Random joke generator"}, function()
    coroutine.wrap(function()
 		 local HttpService = game:GetService('HttpService')
-		 local check = "https://official-joke-api.appspot.com/jokes/programming/random"
+		 local check = "official-joke-api.appspot.com/jokes/programming/random"
 		 local final1 = game:HttpGet(check)
 		 local final = string.gsub(final1, "[%[%]]", "")
 		 local decoded = HttpService:JSONDecode(final)
@@ -2477,7 +2477,7 @@ print(Time)
  
  cmd.add({"febtools"}, {"febtools", "Move parts that are your hats"}, function()
  -- [[ THANKS TO ROUXHAVER FOR THIS ]] --
- -- check out his github - https://github.com/rouxhaver
+ -- check out his github - github.com/rouxhaver
  local Players = game:GetService("Players")
  local RunService = game:GetService("RunService")
  local LocalPlayer = Players.LocalPlayer
@@ -2908,7 +2908,7 @@ print(Time)
  end)
  
  cmd.add({"punch"}, {"punch", "punch tool that flings"}, function()
- loadstring(game:HttpGet("https://raw.githubusercontent.com/FilteringEnabled/FE/main/punch",true))()
+ loadstring(game:HttpGet("raw.githubusercontent.com/FilteringEnabled/FE/main/punch",true))()
  end)
  
  cmd.add({"vfly", "vehiclefly"}, {"vehiclefly (vfly)", "be able to fly vehicles"}, function(...)
@@ -7986,12 +7986,12 @@ game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageReque
  movetool.Name = "Move"
  movetool.CanBeDropped = false
  movetool.RequiresHandle = false
- local function createnotification(title, text)
+ local function create(title, text)
 print(title)
 print(text)
  end
  movetool.Activated:Connect(function()
-	 createnotification("Move Tool", "You are moving: "..mouse.Target.Name)
+	 create("Move Tool", "You are moving: "..mouse.Target.Name)
 	 movingpart = mouse.Target
 	 movedetect = true
 	 movingpart.CanCollide = false
@@ -8008,7 +8008,7 @@ print(text)
 	 until movedetect == false
  end)
  movetool.Deactivated:Connect(function()
-	 createnotification("Move Tool", "You have stopped moving: "..mouse.Target.Name)
+	 create("Move Tool", "You have stopped moving: "..mouse.Target.Name)
 	 movingpart.CanCollide = true
 	 movedetect = false
 	 mouse.TargetFilter = nil
@@ -8499,7 +8499,7 @@ print(Time)
 		 wait(0.3)
 		 script.Parent.Parent:TweenPosition(UDim2.new(0.355, 0,1.291, 0), "Out", "Quint",1,true)
 		 wait(0.9)
-		 local AkaliNotif = loadstring(game:HttpGet("https://raw.githubusercontent.com/yellowstar520-RGB/Nameless-No-Byfron/main/Notification"))();
+		 local AkaliNotif = loadstring(game:HttpGet("https://raw.githubusercontent.com/yellowstar520-RGB/NamelessByfronless/main/Notification"))();
 		 local Notify = AkaliNotif.Notify;
 		 Notify({
 			 Description = "Anti chat log has been ran.";
@@ -14627,7 +14627,7 @@ end)
 		 });
  end
  
- -- [[ PLUGINS LOADED NOTIFICATION ]] --
+ -- [[ PLUGINS LOADED  ]] --
  if PluginsErrored == 0 then
 	 Notify({
 			 Description = "Loaded " .. PluginsLoaded .. " plugins";
