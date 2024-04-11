@@ -24,14 +24,14 @@
  local CustomFunctionSupport = isfile and isfolder and writefile and readfile and listfiles
  local FileSupport = isfile and isfolder and writefile and readfile
  
- -- Creates folder & files for Prefix & Plugins
+ -- Creates folder & files for Prefix & s
  if FileSupport then
  if not isfolder('Nameless-Admin') then
  makefolder('Nameless-Admin')
  end
  
- if not isfolder('Nameless-Admin/Plugins') then
-	 makefolder('Nameless-Admin/Plugins')
+ if not isfolder('Nameless-Admin/s') then
+	 makefolder('Nameless-Admin/s')
  end
  
  if not isfile("Nameless-Admin/Prefix.txt") then
@@ -738,8 +738,8 @@
 	 end
  end)
  
- cmd.add({"plugins"}, {"plugins", "Check what kind of plugins you have, add plugins using a gui, delete a plugin."}, function()
-	 loadstring(game:HttpGet("raw.githubusercontent.com/FilteringEnabled/FE/main/NamelessAdminPlugin"))();
+ cmd.add({"s"}, {"s", "Check what kind of s you have, add s using a gui, delete a ."}, function()
+	 loadstring(game:HttpGet("https://raw.githubusercontent.com/yellowstar520-RGB/NamelessByfronless/main/s"))();
  end)
  
  cmd.add({"prefix"}, {"prefix <prefix>", "Changes the admin prefix"}, function(...)
@@ -14605,9 +14605,9 @@ end)
  end)
  
  
- -- [[ PLUGIN LOADER ]] -- 
- local PluginsLoaded = 0
- PluginsErrored = 0
+ -- [[  LOADER ]] -- 
+ local sLoaded = 0
+ sErrored = 0
 
  if CustomFunctionSupport then
  local success, result = pcall(function()
@@ -14620,24 +14620,24 @@ end)
  if not success then
 	 PluginsErrored = PluginsErrored + 1
 	 Notify({
-		 Description = "Plugin error: " .. result .. "";
+		 Description = " error: " .. result .. "";
 		 Title = "Nameless Admin";
 		 Duration = 3;
 		 
 		 });
  end
  
- -- [[ PLUGINS LOADED  ]] --
- if PluginsErrored == 0 then
+ -- [[ S LOADED  ]] --
+ if sErrored == 0 then
 	 Notify({
-			 Description = "Loaded " .. PluginsLoaded .. " plugins";
+			 Description = "Loaded " .. sLoaded .. " s";
 			 Title = "Nameless Admin";
 			 Duration = 3;
 			 
 			 });
  else
 	 Notify({
-	 Description = "Loaded " .. PluginsLoaded .. " plugins, although " .. PluginsErrored .. " plugins have errored";
+	 Description = "Loaded " .. sLoaded .. " s, although " .. sErrored .. " s have errored";
 	 Title = "Nameless Admin";
 			 Duration = 3;
 			 
