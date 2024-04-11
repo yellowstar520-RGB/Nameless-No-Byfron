@@ -19,13 +19,6 @@
  -- Notification library
  local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/yellowstar520-RGB/Nameless-No-Byfron/main/Notification"))();
  local Notify = Notification.Notify;
-
- Notify({
-		 Description = "Hello :D -@yellowstar520 (Discord);
-		 Title = "NA";
-		 Duration = 5;
-		 
-});
  
  -- Custom file functions checker checker
  local CustomFunctionSupport = isfile and isfolder and writefile and readfile and listfiles
