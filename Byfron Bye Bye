@@ -21,7 +21,7 @@
  local Notify = Notification.Notify;
 
  Notify({
-		 Description = "Happy New Years!";
+		 Description = "Hello :D -@yellowstar520 (Discord);
 		 Title = "NA";
 		 Duration = 5;
 		 
